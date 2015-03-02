@@ -67,11 +67,12 @@ div {
   text-align: center;
   max-height: 0;
   overflow: hidden;
+    transition: all 1s linear;
 }
 
 .js-panel-expand {
     max-height: 10em;
-    transform: translateY(50%);
+    transition: all 1s linear;
 }
 
 .panel h2 {
