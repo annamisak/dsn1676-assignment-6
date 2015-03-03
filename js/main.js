@@ -33,8 +33,8 @@ $circle.on('animationend', function () {
     $circle.removeClass('js-circle-bounce');
 });
 
-$moveAppend.on('click', function () {
-    var offset = $list.offset();
-    
-    $list.css('top', offset.top - 10);
+$btnAppend.on('click', function () {
+    var $li = $('<li>New item</li>');
+    $list.prepend($li);
+    $li.addClass('js-list-append');
 });
