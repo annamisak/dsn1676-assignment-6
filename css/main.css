@@ -67,7 +67,7 @@ div {
   text-align: center;
   max-height: 0;
   overflow: hidden;
-    transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .js-panel-expand {
@@ -84,8 +84,22 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
+  border-radius: 50%;
 
   background-color: orange;
+}
+
+.js-circle-bounce {
+    animation: circle-bounce 1s linear;
+}
+
+@keyframes circle-bounce {
+    0% {right: 30px; top: calc(50% - 40px);}
+    20% {right: 60px; top: calc(50% - 50px);}
+    40% {right: 90px; top: calc(50% - 40px);}
+    60% {right: 120px; top: calc(50% - 50px);}
+    80% {right: 150px; top: calc(50% - 40px);}
+    100% {right: 180px; top: calc(50% - 50px);}
 }
 
 .list {
